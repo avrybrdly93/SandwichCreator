@@ -1,0 +1,35 @@
+﻿<Window x:Class="SandwichCreator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SandwichCreator"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Title="MainWindow" Height="561.458" Width="926.042">
+
+    
+
+    <Grid>
+        <Label HorizontalAlignment="Center" Margin="224,25,225,0" VerticalAlignment="Top" Width="257" Height="62">
+            <TextBlock Text="Mass Sandwich Creator" HorizontalAlignment="Center" RenderTransformOrigin="1.612,0.607" Height="27" Width="236" FontSize="20"/>
+        </Label>
+        <ListBox Name="BreadBox" SelectionMode="Multiple" HorizontalAlignment="Left" Height="65" Margin="40,136,0,320" MinWidth="150"
+                  ItemsSource="{Binding Source={local:SandwichCreator {x:Type local:BreadType}}}"/>
+        <ListBox Name="MeatBox" SelectionMode="Multiple" HorizontalAlignment="Left" Height="65" Margin="236,136,0,320" MinWidth="150"
+                  ItemsSource="{Binding Source={local:SandwichCreator {x:Type local:MeatType}}}"/>
+        <ListBox Name="CheeseBox" SelectionMode="Multiple" HorizontalAlignment="Left" Height="65" Margin="437,136,0,320" MinWidth="150"
+                  ItemsSource="{Binding Source={local:SandwichCreator {x:Type local:CheeseType}}}"/>
+        <ListBox x:Name="CondimentBox" SelectionMode="Multiple" HorizontalAlignment="Left" Height="45" Margin="662,136,0,320" MinWidth="150"
+            ItemsSource="{Binding Source={local:SandwichCreator {x:Type local:CondimentType}}}"/>
+        <ListBox x:Name="VeggiesBox" SelectionMode="Multiple" HorizontalAlignment="Left" Height="85" Margin="40,246,0,198" MinWidth="150"
+            ItemsSource="{Binding Source={local:SandwichCreator {x:Type local:VeggiesType}}}"/>
+        <ListBox x:Name="SpicesBox" SelectionMode="Multiple" HorizontalAlignment="Left" Height="85" Margin="236,246,0,193" MinWidth="150"
+            ItemsSource="{Binding Source={local:SandwichCreator {x:Type local:SpicesType}}}"/>
+        <Button Content="Order" HorizontalAlignment="Left" Margin="330,412,0,0" VerticalAlignment="Top" Width="196" x:Name="OrderButton" Click="OrderButton_Click" Height="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="96,100,0,0" TextWrapping="Wrap" Text="Bread" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="296,100,0,0" TextWrapping="Wrap" Text="Meat" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="81,220,0,0" TextWrapping="Wrap" Text="Veggies" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="485,100,0,0" TextWrapping="Wrap" Text="Cheese" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="700,100,0,0" TextWrapping="Wrap" Text="Condiment" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="288,220,0,0" TextWrapping="Wrap" Text="Spices" VerticalAlignment="Top" FontSize="16"/>
+
+    </Grid>
+</Window>

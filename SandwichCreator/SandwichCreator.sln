@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingEnums", "BindingEnums\BindingEnums.csproj", "{C469A3B4-575F-4A05-9AF2-B59318004C1D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandwichCreator", "SandwichCreator.csproj", "{C469A3B4-575F-4A05-9AF2-B59318004C1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26ED0487-CCCE-46F2-BD72-F4F4090AB986}
 	EndGlobalSection
 EndGlobal

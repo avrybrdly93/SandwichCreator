@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Markup;
 
-namespace BindingEnums
+namespace SandwichCreator
 {
-    public class EnumBindingSourceExtension : MarkupExtension
+    public class SandwichCreatorExtension : MarkupExtension
     {
         private Type _enumType;
         public Type EnumType
@@ -26,9 +26,9 @@ namespace BindingEnums
             }
         }
 
-        public EnumBindingSourceExtension() { }
+        public SandwichCreatorExtension() { }
 
-        public EnumBindingSourceExtension(Type enumType)
+        public SandwichCreatorExtension(Type enumType)
         {
             this.EnumType = enumType;
         }

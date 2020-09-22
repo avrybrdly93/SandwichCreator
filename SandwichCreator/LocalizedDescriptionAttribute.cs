@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Resources;
 
-namespace BindingEnums
+namespace SandwichCreator
 {
     public class LocalizedDescriptionAttribute : DescriptionAttribute
     {
